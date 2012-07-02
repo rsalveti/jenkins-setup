@@ -52,3 +52,9 @@ echo 'MACHINE = "qemuarmv7a"'							>>conf/site.conf
 # get rid of MACHINE setting from local.conf
 
 sed -i -e "s/^MACHINE.*//g" conf/local.conf
+
+
+# do build
+
+bitbake linaro-image-lamp
+
