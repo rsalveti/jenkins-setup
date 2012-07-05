@@ -15,6 +15,7 @@ pushd meta-openembedded/
 git remote add meta-oe-contrib git://git.openembedded.org/meta-openembedded-contrib
 git remote update
 git cherry-pick  6db6c1a69470d589016c878b3d9aa3d1dc4a12bb
+rm meta-oe/recipes-extended/lighttpd -rf
 popd
 
 git clone git://git.openembedded.org/openembedded-core
