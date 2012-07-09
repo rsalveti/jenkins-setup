@@ -9,14 +9,8 @@ apt-get install -y --force-yes sed wget cvs subversion git bzr coreutils unzip b
 git clone git://git.linaro.org/openembedded/meta-linaro.git
 git clone git://git.openembedded.org/meta-openembedded
 
-# add gcc-4.6 recipes
-
-pushd meta-openembedded/
-git remote add meta-oe-contrib git://git.openembedded.org/meta-openembedded-contrib
-git remote update
-git cherry-pick  6db6c1a69470d589016c878b3d9aa3d1dc4a12bb
-rm meta-oe/recipes-extended/lighttpd -rf
-popd
+# ugly hack
+rm meta-openembedded/meta-oe/recipes-extended/lighttpd -rf
 
 git clone git://git.openembedded.org/openembedded-core
 cd openembedded-core/
