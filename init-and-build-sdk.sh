@@ -8,4 +8,4 @@ source $DIR/init.sh
 
 bitbake core-image-lsb-sdk
 
-prepare_for_publish()
+prepare_for_publish

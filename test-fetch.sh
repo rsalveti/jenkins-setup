@@ -8,4 +8,4 @@ source $DIR/init.sh
 
 bitbake -cfetchall pseudo-native
 
-prepare_for_publish()
+prepare_for_publish

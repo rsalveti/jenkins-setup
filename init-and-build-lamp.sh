@@ -8,4 +8,4 @@ source $DIR/init.sh
 
 bitbake linaro-image-lamp
 
-prepare_for_publish()
+prepare_for_publish
