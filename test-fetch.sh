@@ -7,3 +7,5 @@ source $DIR/init.sh
 # do build
 
 bitbake -cfetchall pseudo-native
+
+prepare_for_publish()

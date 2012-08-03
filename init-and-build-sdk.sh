@@ -7,3 +7,5 @@ source $DIR/init.sh
 # do build
 
 bitbake core-image-lsb-sdk
+
+prepare_for_publish()

@@ -7,3 +7,5 @@ source $DIR/init.sh
 # do build
 
 bitbake linaro-image-lamp
+
+prepare_for_publish()

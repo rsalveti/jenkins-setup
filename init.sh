@@ -53,3 +53,24 @@ echo 'SSTATE_MIRRORS = "file://.* http://snapshots.linaro.org/sstate-cache/' >>c
 # get rid of MACHINE setting from local.conf
 
 sed -i -e "s/^MACHINE.*//g" conf/local.conf
+
+prepare_for_publish () {
+
+# some stuff to be run after build
+
+pushd downloads
+
+rm *.done
+rm -rf git2 svn cvs bzr # we publish files not SCM dirs
+
+popd
+
+pushd sstate-cache/
+rm `find . -type l`
+rm *.done
+mv */* .
+mv */*/* .
+rm -rf ?? Ubuntu-*
+popd
+
+}
