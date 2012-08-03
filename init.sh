@@ -46,6 +46,10 @@ echo 'PARALLEL_MAKE = "-j4"'							>>conf/site.conf
 echo 'SOURCE_MIRROR_URL = "http://snapshots.linaro.org/sources' >>conf/site.conf
 echo 'INHERIT += "own_mirrors"' 								>>conf/site.conf
 
+# enable sstate mirror
+
+echo 'SSTATE_MIRRORS = "file://.* http://snapshots.linaro.org/sstate-cache/' >>conf/site.conf
+
 # get rid of MACHINE setting from local.conf
 
 sed -i -e "s/^MACHINE.*//g" conf/local.conf
