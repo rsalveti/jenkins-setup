@@ -43,8 +43,8 @@ echo 'PARALLEL_MAKE = "-j4"'							>>conf/site.conf
 
 # enable source mirror
 
-#echo 'SOURCE_MIRROR_URL = "http://snapshots.linaro.org/TO-BE-DECIDED"' >>conf/site.conf
-#echo 'INHERIT += "own_mirrors"' 										>>conf/site.conf
+echo 'SOURCE_MIRROR_URL = "http://snapshots.linaro.org/sources' >>conf/site.conf
+echo 'INHERIT += "own_mirrors"' 								>>conf/site.conf
 
 # get rid of MACHINE setting from local.conf
 
