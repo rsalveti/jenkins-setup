@@ -40,6 +40,7 @@ echo 'BB_GENERATE_MIRROR_TARBALLS = "True"' 			>>conf/site.conf
 echo 'MACHINE = "qemuarmv7a"'							>>conf/site.conf
 echo 'BB_NUMBER_THREADS = "4"'							>>conf/site.conf
 echo 'PARALLEL_MAKE = "-j4"'							>>conf/site.conf
+echo 'IMAGE_FSTYPES = "tar.gz"'						>>conf/site.conf
 
 # enable source mirror
 
