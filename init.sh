@@ -29,7 +29,7 @@ echo "BBLAYERS += '`realpath $PWD/../openembedded-core/meta`'" >>conf/bblayers.c
 # Add some Linaro related options
 
 echo 'SCONF_VERSION = "1"'					 			>>conf/site.conf
-echo 'DEFAULTTUNE_qemuarmv7a = "armv7athf-neon"'		>>conf/site.conf
+echo 'DEFAULTTUNE_genericarmv7a = "armv7athf-neon"'		>>conf/site.conf
 echo '# specify the alignment of the root file system' 	>>conf/site.conf
 echo '# this is required when building for qemuarmv7a' 	>>conf/site.conf
 echo 'IMAGE_ROOTFS_ALIGNMENT = "2048"' 					>>conf/site.conf
@@ -37,7 +37,7 @@ echo 'GCCVERSION = "linaro-4.7"' 						>>conf/site.conf
 echo 'SDKGCCVERSION = "linaro-4.7"' 					>>conf/site.conf
 echo 'INHERIT += "rm_work"' 							>>conf/site.conf
 echo 'BB_GENERATE_MIRROR_TARBALLS = "True"' 			>>conf/site.conf
-echo 'MACHINE = "qemuarmv7a"'							>>conf/site.conf
+echo 'MACHINE = "genericarmv7a"'						>>conf/site.conf
 echo 'BB_NUMBER_THREADS = "4"'							>>conf/site.conf
 echo 'PARALLEL_MAKE = "-j4"'							>>conf/site.conf
 echo 'IMAGE_FSTYPES = "tar.gz"'						>>conf/site.conf
