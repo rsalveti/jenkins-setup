@@ -51,6 +51,10 @@ echo 'INHERIT += "own-mirrors"' 								>>conf/site.conf
 
 echo 'SSTATE_MIRRORS = "file://.* http://snapshots.linaro.org/openembedded/sstate-cache/"' >>conf/site.conf
 
+# enable a distro feature that is compatible with the minimal goal we have
+
+echo 'DISTRO_FEATURES = "alsa argp ext2 largefile usbgadget usbhost xattr nfs zeroconf ${DISTRO_FEATURES_LIBC}"' >>conf/site.conf
+
 # get rid of MACHINE setting from local.conf
 
 sed -i -e "s/^MACHINE.*//g" conf/local.conf
