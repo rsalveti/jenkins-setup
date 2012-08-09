@@ -39,8 +39,8 @@ echo 'SDKGCCVERSION = "linaro-4.7"' 					>>conf/site.conf
 echo 'INHERIT += "rm_work"' 							>>conf/site.conf
 echo 'BB_GENERATE_MIRROR_TARBALLS = "True"' 			>>conf/site.conf
 echo 'MACHINE = "genericarmv7a"'						>>conf/site.conf
-echo 'BB_NUMBER_THREADS = "4"'							>>conf/site.conf
-echo 'PARALLEL_MAKE = "-j4"'							>>conf/site.conf
+echo 'BB_NUMBER_THREADS = "8"'							>>conf/site.conf
+echo 'PARALLEL_MAKE = "-j8"'							>>conf/site.conf
 echo 'IMAGE_FSTYPES = "tar.gz"'						>>conf/site.conf
 
 # enable source mirror
